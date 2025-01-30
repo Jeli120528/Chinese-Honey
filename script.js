@@ -13,19 +13,6 @@ scrollToTopBtn.onclick = function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-// Dark Mode Toggle (Bee Night Mode)
-function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-    let isDarkMode = document.body.classList.contains("dark-mode");
-    
-    if (isDarkMode) {
-        document.body.style.backgroundColor = "#3b2f2f"; // Dark honey brown
-        document.body.style.color = "#fbd46d"; // Honey gold text
-    } else {
-        document.body.style.backgroundColor = "#fbeec1"; // Warm honey
-        document.body.style.color = "#5c3d00"; // Dark brown text
-    }
-}
 
 // Real-Time Form Validation
 document.getElementById("contactForm").addEventListener("submit", function (event) {
