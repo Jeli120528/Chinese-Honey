@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Harvest Honey - Pure Chinese Honey</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- MathJax for MathML rendering -->
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="images/logo.jpg" alt="Golden Harvest Honey Logo" class="logo">
+            <h1>Golden Harvest Honey</h1>
+            <p>Pure, Organic, and 100% Chinese Honey</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#products">Our Honey</a>
+        <a href="#process">Production Process</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>Meet the Honey Farmer</h2>
+        <div class="section-content">
+            <img src="images/farmer.jpg" alt="Chinese Honey Farmer Li Wei" class="section-img">
+            <p>Welcome to <strong>Golden Harvest Honey</strong>! My name is Li Wei, and I've been harvesting pure, organic honey for over 20 years in the heart of China. Our farm is dedicated to producing high-quality, chemical-free honey that brings nature’s sweetness to your table.</p>
+        </div>
+    </section>
+
+    <!-- Our Honey Products -->
+    <section id="products">
+        <h2>Our Honey Selection</h2>
+        <!-- Animated SVG Honeycomb -->
+        <div class="svg-container">
+            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,15 100,0 150,15 150,85 100,100 50,85"
+                    fill="#d4a017" stroke="#8c6239" stroke-width="4">
+                    <animate attributeName="fill" values="#d4a017;#fbd46d;#d4a017" dur="2s" repeatCount="indefinite"/>
+                </polygon>
+            </svg>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/wildflower-honey.jpg" alt="Wildflower Honey">
+                <h3>Wildflower Honey</h3>
+                <p>Light and floral, perfect for tea and baking.</p>
+            </div>
+            <div class="product">
+                <img src="images/acacia-honey.jpg" alt="Mountain Acacia Honey">
+                <h3>Mountain Acacia Honey</h3>
+                <p>Pale gold and smooth, great for digestion.</p>
+            </div>
+            <div class="product">
+                <img src="images/royal-jelly-honey.jpg" alt="Royal Jelly Infused Honey">
+                <h3>Royal Jelly Infused Honey</h3>
+                <p>Boosts immunity and energy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production Process -->
+    <section id="process">
+        <h2>How Our Honey is Made</h2>
+        <p>From hive to bottle, we ensure that our honey is 100% natural and untouched by artificial additives.</p>
+        <ul>
+            <li>Bees collect nectar from local flowers.</li>
+            <li>Raw honey is extracted using traditional methods.</li>
+            <li>Naturally filtered and bottled for purity.</li>
+        </ul>
+
+        
+    <!-- Mathematical Object: Honey Flow & Bee Activity Formula -->
+    <h3>Mathematical Model for Honey Flow</h3>
+    <p>We use advanced calculus to predict honey flow and optimize beekeeping efficiency.</p>
+
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+            <mo>∫</mo>
+            <msub><mo>∇</mo> <mi>D</mi></msub>
+            <mo>⋅</mo>
+            <mi>F</mi>
+            <mi>dV</mi>
+            <mo>=</mo>
+            <mo>∫</mo>
+            <msub><mi>∂D</mi></msub>
+            <mo>⋅</mo>
+            <mi>F</mi>
+            <mo>n</mo>
+            <mi>dS</mi>
+        </mrow>
+    </math>
+
+    <p>This equation helps us estimate how honey spreads through different hive compartments based on airflow and bee activity.</p>
+
+        <!-- MathML Honey Yield Formula -->
+        <h3>Honey Yield Estimation Formula</h3>
+        
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+                <mi>H</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow><mi>B</mi><mo>×</mo><mi>N</mi><mo>×</mo><mi>Y</mi></mrow>
+                    <mn>1000</mn>
+                </mfrac>
+            </mrow>
+        </math>
+        <p>Where H = Honey Yield (kg), B = Beehives, N = Nectar Availability, Y = Bee Work Rate.</p>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <img src="images/customer1.jpg" alt="Customer Review">
+            <blockquote>"This is the purest honey I've ever tasted. You can truly taste the difference!" - Zhang Wei</blockquote>
+        </div>
+        <div class="testimonial">
+            <img src="images/customer2.jpg" alt="Customer Review">
+            <blockquote>"Perfect for my morning tea, I won't buy any other brand." - Mei Ling</blockquote>
+        </div>
+        <div class="testimonial">
+            <img src="images/customer3.jpg" alt="Customer Review">
+            <blockquote>"The Royal Jelly Honey gives me energy all day. Highly recommend!" - Chen Rong</blockquote>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Want to place an order or visit our farm? Get in touch!</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop">⬆ Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

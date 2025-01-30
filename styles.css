@@ -1,0 +1,193 @@
+/* General Page Styling */
+body {
+    background-color: #fbeec1; /* Warm honey color */
+    color: #5c3d00; /* Dark brown text */
+    font-family: 'Georgia', serif;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Header - Honey Farm Style */
+header {
+    background-color: #d4a017; /* Golden Honey */
+    padding: 25px;
+    border-bottom: 5px solid #8c6239;
+    border-radius: 0 0 20px 20px; /* Soft curve at the bottom */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #8c6239; /* Dark Brown */
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 20px; /* Smooth rounded navbar */
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+nav a {
+    color: #fbeec1; /* Light honey */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 18px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #fbd46d;
+    color: #5c3d00;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    margin: 30px auto;
+    border: 5px solid #d4a017; /* Golden Border */
+    background-color: rgba(255, 239, 184, 0.9);
+    border-radius: 25px;
+    max-width: 80%;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+section:hover {
+    background-color: rgba(255, 223, 143, 0.9);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Rounded Image Styling */
+.section-img, .product img, .testimonial img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-img:hover, .product img:hover, .testimonial img:hover {
+    transform: scale(1.05);
+}
+
+/* Product Grid */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: #fbeebd;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product:hover {
+    transform: scale(1.05);
+    background: #fbd46d;
+}
+
+/* Testimonials */
+.testimonial {
+    background: #fff8dc;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+    background-color: #d4a017;
+    color: #5c3d00;
+    padding: 14px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #5c3d00;
+    color: #fbeec1;
+    transform: scale(1.05);
+}
+
+/* Scroll-to-Top Button */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8c6239;
+    color: #fbeec1;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#scrollToTop:hover {
+    background-color: #d4a017;
+    color: #5c3d00;
+    transform: scale(1.1);
+}
+
+/* Contact Form */
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input, textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 10px;
+    border: 2px solid #8c6239;
+    background-color: #fbeec1;
+    color: #5c3d00;
+    border-radius: 10px;
+}
+
+/* Animated Effects */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.buzz {
+    animation: buzz 0.15s infinite alternate ease-in-out;
+}
+
+@keyframes buzz {
+    from { transform: translateX(0); }
+    to { transform: translateX(3px); }
+}
