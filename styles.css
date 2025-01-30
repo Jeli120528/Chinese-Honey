@@ -191,3 +191,88 @@ input, textarea {
     from { transform: translateX(0); }
     to { transform: translateX(3px); }
 }
+/* GENERAL STYLES */
+body {
+    font-size: 16px; /* Adjust font size for better readability */
+    line-height: 1.6;
+}
+
+/* MAKE IMAGES FLEXIBLE */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 15px;
+}
+
+/* NAVIGATION - MAKE IT SCROLLABLE ON MOBILE */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+nav a {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* RESPONSIVE GRID FOR PRODUCTS */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    width: 90%; /* Make product cards take full width on small screens */
+    max-width: 300px;
+}
+
+/* MAKE TESTIMONIALS STACK NICELY */
+.testimonial {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+/* CONTACT FORM ADJUSTMENTS */
+form {
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* SCROLL-TO-TOP BUTTON ADJUSTMENT */
+#scrollToTop {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+}
+
+/* 📱 MOBILE-SPECIFIC ADJUSTMENTS */
+@media (max-width: 768px) {
+    /* Make text center-aligned */
+    section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Stack navbar items vertically */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Reduce section padding */
+    section {
+        padding: 20px 10px;
+    }
+}
